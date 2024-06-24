@@ -30,6 +30,16 @@ body {
   margin: auto;
 }
 
+
+*.grid{
+  display: grid;
+}
+/* Blocks */
+
+.block{
+  text-align: center;
+}
+
 /* Navigation Bar */
 
 .navbar {
@@ -196,6 +206,7 @@ a:link {
   background: var(--primary-color-light);
   margin: auto;
   margin-top: 3rem;
+  margin-bottom: 5rem;
   overflow: hidden;
 }
 
@@ -264,6 +275,9 @@ a:link {
     font-size: 2;
   }
 }
+
+/* Buttons */
+
 .btn {
   background: var(--primary-color);
   border-radius: 5px;
@@ -285,3 +299,55 @@ a:link {
 .btn:active {
   background: var(--primary-dark);
 }
+
+/* Domain Block */
+
+.block-domain{
+  margin: 2rem;
+}
+
+.domain__heading{
+  font-family: var(--header-font);
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.domain__content{
+  color: var(--body-font); 
+}
+
+@media screen and (min-width:800px){
+  .domain__content{
+    width: 50rem;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* Story Secion */
+
+.story-section{
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+  font-size: 1.3rem;
+}
+
+.story__item{
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.story-container{
+  display: grid;
+  grid-template-rows: repeat(2. 1fr);
+}
+
+.story__title{
+  position: relative;
+  right: 1rem;
+}
+
+.story__
