@@ -38,21 +38,21 @@ body {
 
 /* Scroll Bar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   height: 50px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: #d1bebe;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--primary-color);
   border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: var(--primary-dark);
 }
 
@@ -304,10 +304,8 @@ body {
   border-radius: 5px;
   border: 0;
   color: var(--white);
-  width: 13rem;
-  height: 4rem;
   margin: 3rem 0;
-  padding: 0 1rem;
+  padding: 2rem;
   text-transform: uppercase;
   transition: box-shadow 0.3s;
 }
@@ -436,7 +434,7 @@ body {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   overflow: hidden;
-  box-shadow: 0 0 15px #b1b1b1;;
+  box-shadow: 0 0 15px #b1b1b1;
 }
 
 .card__item p {
@@ -574,4 +572,115 @@ a:link {
   letter-spacing: -0.3rem;
   content: "-->";
   margin-left: 13px;
+}
+
+/* Products Showcase */
+
+.product__showcase {
+  margin: 1rem;
+  margin-top: 10rem;
+}
+
+.product__showcase a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.product__showcase a:hover {
+  color: var(--primary-color);
+}
+
+.product__showcase .lm-btn {
+  color: var(--white);
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+}
+
+.product__showcase .lm-btn:hover {
+  color: white;
+  box-shadow: var(--primary-color) 0 0 10px 1px;
+}
+
+.lm-btn-container {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.grid--4x2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.product-container {
+  text-align: center;
+}
+
+.product-container h4 {
+  margin: 1.5rem 0;
+  font-family: var(--header-font);
+  font-weight: 800;
+}
+
+.product-container p {
+  display: inline;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+.discount-price {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.product_img-container {
+  border-radius: 10px;
+  background: #f1f1f1;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.product_img-container:hover {
+  transform: scale(1.1);
+}
+
+.product__img {
+  width: 80%;
+  padding: 1rem;
+}
+
+.heels__img {
+  padding: 1.6rem 1rem;
+}
+
+.rating-stars {
+  margin-top: 1.5rem;
+}
+
+.checked {
+  color: orange;
+}
+
+@media screen and (min-width: 600px) {
+  .heels__img {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .grid--2x4 {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
 }
