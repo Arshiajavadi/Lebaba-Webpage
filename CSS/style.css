@@ -323,7 +323,7 @@ body {
 /* Domain Block */
 
 .block-domain {
-  margin-top: 10rem;
+  margin: 10rem 2rem;
 }
 
 .domain__heading {
