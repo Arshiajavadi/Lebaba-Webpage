@@ -71,6 +71,7 @@ body {
   flex-wrap: wrap;
 }
 
+
 .nav__logo a {
   font-family: var(--primary-font);
   color: black;
@@ -91,10 +92,12 @@ body {
   margin: 1rem;
   font-size: 2rem;
   color: var(--text-dark);
+  transition: color 0.3s;
 }
 
 .icons__item:hover{
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 .nav-list {
@@ -131,7 +134,7 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .navbar .menu-icon {
     display: none;
   }
@@ -970,6 +973,10 @@ footer a:hover {
 
 .collapsible__header {
   padding-top: 1rem;
+}
+
+.collapsible__header:hover{
+  cursor: pointer;
 }
 
 .collapsible__content p {
