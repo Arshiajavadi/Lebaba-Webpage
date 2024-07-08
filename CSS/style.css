@@ -1027,8 +1027,9 @@ footer a:hover {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     margin: auto;
-    max-width: 115;
+    max-width: 115rem;
     padding: 5rem;
+    padding-bottom: 0;
   }
   .collapsible__content {
     opacity: 1;
