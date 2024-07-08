@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="images/Logos/Lebaba 64 big.png" />
+    <title>Lebeba - Be Your Beatiful Self With Lebaba</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <script
       src="https://kit.fontawesome.com/f3626f00ef.js"
@@ -13,11 +14,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <nav class="navbar collapsible grid grid--1x3">
-      <!-- Collapsible navbar -->
+    <!-- Collapsible navbar -->
 
+    <nav class="navbar collapsible grid grid--1x3">
       <ul class="nav-list collapsible__content">
         <li class="item"><a href="">Home</a></li>
         <li class="item"><a href="">Shop</a></li>
@@ -54,7 +56,7 @@
 
     <!-- Hero Section -->
 
-    <section class="hero-section grid grid--1x2">
+    <section class="hero-section grid grid--1x2" data-aos="fade-up">
       <div class="hero__header">
         <p class="hero__title">up to 20% discount on</p>
         <h2 class="hero__heading">Girl's Fashion</h2>
@@ -71,7 +73,7 @@
 
     <!-- Domain Block -->
 
-    <section class="block-domain block">
+    <section class="block-domain block" data-aos="fade-down">
       <h3 class="domain__heading">top categories</h3>
       <div class="domain__content">
         <p>
@@ -83,7 +85,7 @@
 
     <!-- Stories Section -->
 
-    <section class="story-section grid grid--2x2">
+    <section class="story-section grid grid--2x2" data-aos="zoom-in">
       <div class="story-container">
         <div class="story__border">
           <div class="story__border2">
@@ -132,7 +134,7 @@
 
     <!-- Plan Cards -->
 
-    <div class="card__plan grid grid--3x1">
+    <div class="card__plan grid grid--3x1" data-aos="flip-left">
       <div class="card__item card1 grid">
         <div class="card_header-container">
           <p>2024 Trend</p>
@@ -142,7 +144,7 @@
         <img class="card1__img" src="images/Blue-girl2.png" alt="" />
       </div>
 
-      <div class="card__item card2 grid">
+      <div class="card__item card2 grid" data-aos="flip-right">
         <div class="card_header-container">
           <p>2024 Trend</p>
           <h4 class="card__header">Womens Smart Shirt</h4>
@@ -151,7 +153,7 @@
         <img class="card2__img" src="images/Selena-Gomez.png" alt="" />
       </div>
 
-      <div class="card__item card3 grid">
+      <div class="card__item card3 grid" data-aos="flip-left">
         <div class="card_header-container">
           <p>Up to 30% Discount</p>
           <h4 class="card__header">Girl's Sweatshirt</h4>
@@ -163,7 +165,7 @@
 
     <!-- Block Domain II -->
 
-    <section class="block-domain block">
+    <section class="block-domain block" data-aos="zoom-in">
       <h3 class="domain__heading">Trending Products</h3>
       <div class="domain__content">
         <p>
@@ -175,7 +177,7 @@
 
     <!-- Products Menu -->
 
-    <section class="product__menu">
+    <section class="product__menu" data-aos="zoom-out">
       <div class="grid grid--4x2 grid--2x4">
         <a href="#">
           <div class="product-container">
@@ -359,7 +361,11 @@
     <!-- Showcase Section -->
 
     <section>
-      <div class="showcase grid grid--1x2-showcase">
+      <div
+        class="showcase grid grid--1x2-showcase"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <picture class="grid--1x2-showcase-img">
           <img
             class="showcase__image"
@@ -393,7 +399,7 @@
 
     <!-- Services Section -->
 
-    <section class="service-section">
+    <section class="service-section" data-aos="zoom-in">
       <div class="service__icon-container grid--1x3-service">
         <div class="service__icon__item">
           <i class="fa-solid fa-truck icon"></i>
@@ -418,6 +424,8 @@
     <section class="box-section">
       <div class="box-container">
         <div class="box__content">
+
+
           <!-- Block Domain III -->
 
           <section class="block-domain block">
@@ -432,7 +440,7 @@
 
           <!--Texed Plan Card -->
 
-          <section class="texted-card-section">
+          <section class="texted-card-section" data-aos="zoom-in">
             <div class="texted-card__plan">
               <a href="#">
                 <div class="texted-card__item">
@@ -601,5 +609,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

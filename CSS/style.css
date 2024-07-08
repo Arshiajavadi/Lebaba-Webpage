@@ -71,7 +71,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .nav__logo a {
   font-family: var(--primary-font);
   color: black;
@@ -95,7 +94,7 @@ body {
   transition: color 0.3s;
 }
 
-.icons__item:hover{
+.icons__item:hover {
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -972,10 +971,10 @@ footer a:hover {
 }
 
 .collapsible__header {
-  padding-top: 1rem;
+  padding-top: 1.8rem;
 }
 
-.collapsible__header:hover{
+.collapsible__header:hover {
   cursor: pointer;
 }
 
@@ -996,6 +995,13 @@ footer a:hover {
 
 .newsletter-container {
   padding-top: 1rem;
+}
+
+.footer__copyright {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #929292;
 }
 
 .input-group {
@@ -1023,12 +1029,6 @@ footer a:hover {
   box-shadow: 0 0 10px 1px #f88f8f;
 }
 
-.footer__copyright {
-  font-size: 1.3rem;
-  text-align: center;
-  line-height: 1rem;
-  color: #929292;
-}
 
 @media screen and (min-width: 800px) {
   .footer-grid {
@@ -1040,6 +1040,10 @@ footer a:hover {
     max-width: 115rem;
     padding: 5rem;
     padding-bottom: 0;
+  }
+
+  footer a{
+    font-weight: 500;
   }
   .collapsible__content {
     opacity: 1;
