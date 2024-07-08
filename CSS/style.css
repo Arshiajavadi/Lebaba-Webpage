@@ -93,19 +93,22 @@ body {
   color: var(--text-dark);
 }
 
+.icons__item:hover{
+  cursor: pointer;
+}
+
 .nav-list {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 1rem;
   padding: 0;
-  margin: 0;
-  margin-left: 3rem;
+  margin: 0 2rem;
   width: 100%;
 }
 
 .item {
-  border-bottom: solid #ffffff80 1px;
+  border-bottom: solid rgba(219, 219, 219, 0.5) 1px;
   padding: 1rem;
 }
 
@@ -984,7 +987,7 @@ footer a:hover {
   padding-right: 1rem;
 }
 
-.newsletter-container{
+.newsletter-container {
   padding-top: 1rem;
 }
 
@@ -1013,7 +1016,7 @@ footer a:hover {
   box-shadow: 0 0 10px 1px #f88f8f;
 }
 
-.footer__copyright{
+.footer__copyright {
   font-size: 1.3rem;
   text-align: center;
   line-height: 1rem;
