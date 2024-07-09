@@ -626,6 +626,7 @@ a:link {
 }
 
 .product-container {
+  position: relative;
   text-align: center;
 }
 
@@ -639,11 +640,6 @@ a:link {
   display: inline;
   font-size: 1.4rem;
   padding: 0.5rem;
-}
-
-.discount-price {
-  opacity: 0.5;
-  text-decoration: line-through;
 }
 
 .product_img-container {
@@ -665,6 +661,11 @@ a:link {
 .product__img {
   width: 80%;
   padding: 1rem;
+}
+
+.discount-price {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
 
 .heels__img {
@@ -695,6 +696,37 @@ a:link {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
+  }
+}
+
+/* Badges */
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.1rem 0.3rem;
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 700px) {
+  .badge {
+    top: 15px;
+    right: 13px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .badge {
+    top: 11px;
+    right: 10px;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
   }
 }
 
@@ -1029,7 +1061,6 @@ footer a:hover {
   box-shadow: 0 0 10px 1px #f88f8f;
 }
 
-
 @media screen and (min-width: 800px) {
   .footer-grid {
     display: grid;
@@ -1042,7 +1073,7 @@ footer a:hover {
     padding-bottom: 0;
   }
 
-  footer a{
+  footer a {
     font-weight: 500;
   }
   .collapsible__content {
